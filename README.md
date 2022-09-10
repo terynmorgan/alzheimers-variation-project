@@ -18,7 +18,8 @@ The transcription binding score for a transcription sites comes from a Position 
 4. Compared the extracted sequence with the transcription factor binding site to analyze the potential binding site
 5. Calculated the binding score and identified the top 10 transcription factors that can potentially bind to the 100 base pair sequence 
 6. Mutated the SNP (replaced G allele with C) and repeated step 4
-7. For the top 10 transcription factors identified in step 5, calculated the binding score again and visualize binding score before and after mutation
+7. For the top 10 transcription factors identified in step 5, calculated the binding score again 
+8. Calculated mean and standard deviation of the PSSM for both the original sequence and mutated sequence
 
 **Required Files:**
 - seq.fasta.fa 
