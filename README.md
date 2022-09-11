@@ -1,5 +1,5 @@
 # Analyzing-Genetic-Variation-in-Alzheimers-Disease
-Independent project done through INFO-B 210: Information Infrastructure outside of required coursework through Honors Contract with IUPUI Honors College.
+Independent project done through INFO-B 210: Information Infrastructure I outside of required coursework through Honors Contract with IUPUI Honors College.
 
 **Spring 2021** <br/>
 **Programming Language:** Python <br/>
@@ -12,18 +12,18 @@ Three main genes are considered the main risk facotrs for Early Onset Alzheimer'
 The transcription binding score for a transcription sites comes from a Position Specific Scoring Matrix (PSSM). Transcription factor binding sites (TFBS) defined in the TRANSFAC and JASPAR database are used to construct specific binding site weight matrices for TFBS prediction for you. Since the PSEN1 gene wasn't in either of the aforementioned databases, I used PROMO to identity TFBS from an inputted DNA sequence. Using the top 10 TFBS motifs from PROMO, I converted each into a a Position Weight Matrix (PWM) and then into a PSSM. A sequence motif is a nucleotide or amino-acid sequence pattern of the same length. 
 
 **Steps of development:** 
-1. Using NCBI SNP, identified the location of SNP and which gene it belongs to
-2. Based on the gene information from NCBI RefSeq, identified which intron or exon the SNP was located in 
-3. Extracted the 100 base pair sequence surrounding the SNP from RefSeq
-4. Compared the extracted sequence with the transcription factor binding site to analyze the potential binding site
-5. Calculated the binding score and identified the top 10 transcription factors that can potentially bind to the 100 base pair sequence 
-6. Mutated the SNP (replaced G allele with C) and repeated step 4
-7. For the top 10 transcription factors identified in step 5, calculated the binding score again 
-8. Calculated mean and standard deviation of the PSSM for both the original sequence and mutated sequence
+1. Using NCBI SNP, identified the location of SNP and which gene it belongs to.
+2. Based on the gene information from NCBI RefSeq, identified which intron or exon the SNP was located in.
+3. Extracted the 100 base pair sequence surrounding the SNP from RefSeq.
+4. Compared the extracted sequence with the transcription factor binding site to analyze the potential binding site.
+5. Calculated the binding score and identified the top 10 transcription factors that can potentially bind to the 100 base pair sequence.
+6. Mutated the SNP (replaced G allele with C) and repeated step 4.
+7. For the top 10 transcription factors identified in step 5, calculated the binding score again.
+8. Calculated mean and standard deviation of the PSSM for both the original sequence and mutated sequence.
 
 **Required Files:**
-- seq.fasta.fa 
-- INFO210_Honors_Contract.py
+- seq.fasta.fa -> Fasta file containing 100bp SNP sequence extracted from NCBI 
+- INFO210_Honors_Contract.py -> Python script that calculates TBFS of an EOAD SNP
 
 **Conclusion:**<br/>
 Since not many TFs bind to the SNV itself and only using 10 TFs, when comparing before and after the mutation, the slight variations in the PSSM and PWM didn't account enough to make a significant different in mean and standard deviation when using a background value. However, these variations can be seen looking at the motifs for mean and standard deviation without background value.
