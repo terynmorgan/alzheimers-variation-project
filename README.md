@@ -1,4 +1,4 @@
-# Analyzing-Genetic-Variation-in-Alzheimers-Disease
+# Analyzing Genetic Variation in Alzheimers Disease
 Independent project done through INFO-B 210: Information Infrastructure I outside of required coursework through Honors Contract with IUPUI Honors College.
 
 **Spring 2021** <br/>
