@@ -1,9 +1,9 @@
 # Analyzing Genetic Variation in Alzheimers Disease
 Independent project done through INFO-B 210: Information Infrastructure I outside of required coursework through Honors Contract with IUPUI Honors College.
 
-## **Spring 2021** <br/>
-## **Programming Language:** Python <br/>
-## **Description:**
+**Spring 2021** <br/>
+**Programming Language:** Python <br/>
+### **Description:**
 - Python script utilizes Biopython to compare and calculate the transcription binding factors of a single nucleotide polymorphism (SNP) in an Alzheimer's Disease gene before and after mutation
 
 ### **Background:** <br/>
